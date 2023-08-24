@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body style="background-image: url('/static/img/loadBack.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;">
+
+<center><h2>Please wait...! We are processing on your result....</h2></center>
+<center><p id="tp-data"></p></center>
+<div class="loader" style="margin-left: 45%;"></div>
+
+<script>
+    setTimeout(() => {
+  const box = document.getElementById('tp-data');
+
+  // 👇️ removes element from DOM
+  box.innerHTML="Few Seconds...We are ready with your result.";
+  setTimeout(myURL, 2000);
+  // 👇️ hides element (still takes up space on page)
+  // box.style.visibility = 'hidden';
+}, 2000);
+function myURL() {
+         window.open('/result/10std/student', name = self);
+      }
+</script>
+
+</body>
+</html>

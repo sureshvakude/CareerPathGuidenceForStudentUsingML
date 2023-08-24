@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Carrer oppurtunities | Career Guide</title>
+    
+</head>
+
+<body class="bg-light">
+
+    <main role="main" class="container">
+        
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Some information to related fields</h6>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" >
+                    <strong class="d-block text-gray-dark"><a onclick = "artsfun()" class="btn" style="color: blue;"><b> Arts </b></a></strong>
+                    <p id="arts"></p>
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" >
+                    <strong class="d-block text-gray-dark"><a onclick = "commercefun()" class="btn" style="color: blue;"><b> Commerce </b></a></strong>
+                    <p id="commerce"></p>
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" >
+                    <strong class="d-block text-gray-dark"><a onclick = "sciencefun()" class="btn" style="color: blue;"><b> Science </b></a></strong>
+                    <p id="science"></p>
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray" >
+                    <strong class="d-block text-gray-dark"><a onclick = "diplomafun()" class="btn" style="color: blue;"><b> Diploma </b></a></strong>
+                    <p id="diploma"></p>
+                </p>
+            </div>
+
+        </div>
+        <div><a href="/" class="btn btn-danger" style="margin-left: 4%;">Back</a></div>
+
+        <script> 
+            function diplomafun() { 
+               document.getElementById('diploma').innerHTML = "<br> 1. Engineering: Students can opt for a diploma in Engineering and later pursue a Bachelor's degree in the same field. They can take up careers in various <br> fields like Civil Engineering, Mechanical Engineering, Electrical Engineering, etc.<br>\
+<br> 2. Computer Applications: Students interested in computers can opt for a Diploma in Computer Applications or Information Technology and later take up careers in software development, web designing, and IT support.";
+            }
+
+            function sciencefun(){
+                document.getElementById('science').innerHTML = "<br> 1. Medical Science: Students can opt for Science stream with subjects like Physics, Chemistry, and Biology and later pursue a career in Medical Sciences such as MBBS, BDS, and BAMS.<br>\
+<br> 2. Engineering: Students can also pursue a career in Engineering after completing their 10th standard by opting for a Science stream with Mathematics as a subject."
+            }
+
+            function commercefun(){
+                document.getElementById('commerce').innerHTML = "<br> 1. Commerce: Students can opt for Commerce stream which includes subjects like Accountancy, Business Studies, Economics, and Mathematics. They can later pursue a Bachelor's degree in Commerce and take up careers such as Chartered Accountancy, Company Secretary, and Cost Accountancy.<br>\
+<br> 2. Management: Students can also opt for courses like Bachelor of Business Administration (BBA) and later opt for careers in Management, Human Resource, and Marketing."
+            }
+
+            function artsfun(){
+                document.getElementById('arts').innerHTML = "<br> 1. Humanities: Students can opt for the Humanities stream which includes subjects like History, Geography, Political Science, Sociology, and Psychology. They can later pursue a Bachelor's degree in the same field and take up careers such as teaching, journalism, social work, or civil services.<br>\
+<br> 2. Fine Arts: Students interested in art can pursue a Diploma in Fine Arts or Bachelor of Fine Arts (BFA) and later opt for careers in advertising, graphic design, photography, and animation."
+            }
+         </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

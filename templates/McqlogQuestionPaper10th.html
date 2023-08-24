@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='/css/questionpaper.css')}}" rel="stylesheet">
+    <title>Carrer Guidence | Apptitude test</title>
+    <style>
+      label{
+        font: 20;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+input[type='radio']{
+    width: 20px;
+    height: 20px;
+    margin-right: 1%;
+}
+    </style>
+  </head>
+  <body  style="background-image: url('/static/img/paperBack.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+    <center><u style="color: aliceblue;"><h1>Logical paper</h1></u></center>
+    <div class="form-page">
+        <form action="/aptitude-test/10-student/logpaper" method="post">
+            <label>1. Which one of the five is least like the other four ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que1" value="Dog" required> Dog</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que1" value="Mouse"> Mouse </div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que1" value="Elephant"> Elephant</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que1" value="Snake"> Snake</div>
+        
+            <label>2. Which number should come next in the series?<br>
+                1 - 1 - 2 - 3 - 5 - 8 - 13 </label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que2" value="8" required> 8</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que2" value="13"> 13</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que2" value="21"> 21</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que2" value="26"> 26</div>
+            
+            <label>3. Which one of the five choices makes the best comparison?<br>
+                PEACH is to HCAEP as 46251 is to: ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que3" value="25641" required> 25641</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que3" value="25651"> 25651</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que3" value="12654"> 12654</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que3" value="15264"> 15264</div>
+        
+            <label>4. Mary, who is sixteen years old, is four times as old as her brother. How old will Mary be when she is twice as old as her brother ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que4" value="20" required> 20</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que4" value="24"> 24 </div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que4" value="25"> 25 </div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que4" value="26"> 26</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que4" value="28"> 28</div>
+        
+            <label>5. Which one of the numbers does not belong in the following series?<br>
+                2 - 3 - 6 - 7 - 8 - 14 - 15 - 30 ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que5" value="THREE" required> THREE</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que5" value="SEVEN"> SEVEN</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que5" value="EIGHT"> EIGHT</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que5" value="FIFTEEN"> FIFTEEN</div>
+        
+            <label>6. Which one of the five choices makes the best comparison?<br>
+              Finger is to Hand as Leaf is to: </label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que6" value="Twig" required> Twig</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que6" value="Tree"> Tree</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que6" value="Branch"> Branch</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que6" value="Blossam"> Blossam</div>
+        
+            <label>7. If you rearrange the letters "CIFAIPC" you would have the name of a(n): ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que7" value="City" required> City</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que7" value="Animal"> Animal</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que7" value="Ocean"> Ocean</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que7" value="River"> River</div>
+        
+            <label>8. Choose the number that is 1/4 of 1/2 of 1/5 of 200: ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que8" value="2" required> 2</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que8" value="5">5</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que8" value="10">10</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que8" value="25"> 25</div>
+        
+            <label>9. John needs 13 bottles of water from the store. John can only carry 3 at a time. What's the minimum number of trips John needs to make to the store?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que9" value="3" required> 3</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que9" value="4"> 4</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que9" value="4 1/2"> 4 1/2</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que9" value="5"> 5</div>
+           
+            <label>10. If all Bloops are Razzies and all Razzies are Lazzies, all Bloops are definitely Lazzies. ?</label><br>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que10" value="True" required> True</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="que10" value="False"> False</div>
+           
+
+            <button class="btn btn-sm btn-block btn-primary" type="submit">submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
